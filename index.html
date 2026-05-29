@@ -178,7 +178,7 @@
     .tab-content { display:none; }
     .tab-content.active { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5px; }
 
-    .menu-card { position:relative; overflow:hidden; aspect-ratio:3/4; background:#111; cursor:pointer; }
+    .menu-card { position:relative; overflow:hidden; aspect-ratio:3/4; background:linear-gradient(160deg,#1a1208,#2d1f0e); cursor:pointer; }
     .menu-card img { width:100%; height:100%; object-fit:cover; filter:brightness(.72) saturate(.85); transition:transform .7s var(--ease), filter .5s var(--ease); }
     .menu-card:hover img { transform:scale(1.07); filter:brightness(.55) saturate(1.1); }
     .menu-card-body {
@@ -258,7 +258,7 @@
     /* ── EVENTS ─────────────────────────────── */
     .events { background:var(--light); }
     .events-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5px; margin-top:3.5rem; }
-    .ev-card { position:relative; overflow:hidden; background:#111; }
+    .ev-card { position:relative; overflow:hidden; background:linear-gradient(160deg,#1a1208,#2d1f0e); }
     .ev-card:first-child { grid-row:span 2; }
     .ev-img { width:100%; height:100%; min-height:280px; object-fit:cover; filter:brightness(.6) saturate(.8); transition:transform .7s var(--ease), filter .5s; }
     .ev-card:hover .ev-img { transform:scale(1.05); filter:brightness(.45) saturate(1.1); }
@@ -272,7 +272,7 @@
     .gallery { background:var(--cream2); padding-bottom:0; }
     .gallery-hd { margin-bottom:3rem; }
     .gallery-grid { display:grid; grid-template-columns:repeat(4,1fr); grid-auto-rows:260px; gap:3px; }
-    .g-item { overflow:hidden; background:#111; }
+    .g-item { overflow:hidden; background:linear-gradient(160deg,#1a1208,#2d1f0e); }
     .g-item:nth-child(1) { grid-column:span 2; grid-row:span 2; }
     .g-item:nth-child(6) { grid-column:span 2; }
     .g-item img { width:100%; height:100%; object-fit:cover; filter:saturate(.8); transition:transform .6s var(--ease), filter .5s; }
@@ -584,7 +584,7 @@
       </div>
     </div>
     <div class="menu-card r">
-      <img src="https://images.unsplash.com/photo-1572441713132-51d27d1e7b7d?w=700&q=85" alt="Ravioli Truffle" loading="lazy"/>
+      <img src="https://images.unsplash.com/photo-1598103442097-8b74394b95c8?w=700&q=85" alt="Ravioli Truffle" loading="lazy"/>
       <div class="menu-card-body">
         <div class="mc-tag">Pasta · Chef's Pick</div>
         <div class="mc-name">Ravioli Truffle &amp; Mushrooms</div>
@@ -612,7 +612,7 @@
   <!-- MAINS -->
   <div class="tab-content" id="tab-mains">
     <div class="menu-card r">
-      <img src="https://images.unsplash.com/photo-1551183053-bf91798d047b?w=700&q=85" alt="Highland Fried Rice" loading="lazy"/>
+      <img src="https://images.unsplash.com/photo-1567234669003-dce7a7a88821?w=700&q=85" alt="Highland Fried Rice" loading="lazy"/>
       <div class="menu-card-body">
         <div class="mc-tag">Mains · Signature</div>
         <div class="mc-name">Highland Fried Rice &amp; Asian Fried Chicken</div>
@@ -669,19 +669,13 @@
       <div style="padding:1rem 1.6rem .6rem;font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);border-bottom:1px solid var(--border);">Desserts</div>
       <div class="menu-list-item r">
         <div><div class="mli-name">Chocolate — A Lot</div><div class="mli-desc">Molten dark chocolate brownie with artisanal vanilla ice cream</div></div>
-        <div class="mli-price">฿–</div>
       </div>
       <div class="menu-list-item r">
         <div><div class="mli-name">Coconut Panna Ice Cream</div><div class="mli-desc">Silky coconut panna cotta with tropical mango coulis and toasted coconut</div></div>
-        <div class="mli-price">฿–</div>
       </div>
       <div class="menu-list-item r">
         <div><div class="mli-name">Thai Tea Granita</div><div class="mli-desc">Thai tea granita with condensed milk cream and sweet basil seeds</div></div>
         <div class="mli-price">฿110</div>
-      </div>
-      <div class="menu-list-item r">
-        <div><div class="mli-name">Grandpa's Lasagne</div><div class="mli-desc">Classic layered pasta bake with slow-cooked beef ragù and béchamel</div></div>
-        <div class="mli-price">฿–</div>
       </div>
     </div>
     <div>
@@ -692,15 +686,12 @@
       </div>
       <div class="menu-list-item r">
         <div><div class="mli-name">Apple Mocktail</div><div class="mli-desc">Freshly pressed apple with ginger, basil seeds and a rosemary sprig</div></div>
-        <div class="mli-price">฿–</div>
       </div>
       <div class="menu-list-item r">
         <div><div class="mli-name">Wine &amp; Beer</div><div class="mli-desc">Curated selection of imported wines and craft beers</div></div>
-        <div class="mli-price">฿–</div>
       </div>
       <div class="menu-list-item r">
         <div><div class="mli-name">Cocktail of the Season</div><div class="mli-desc">Ask your server for today's house creation</div></div>
-        <div class="mli-price">฿–</div>
       </div>
     </div>
   </div>
@@ -807,7 +798,7 @@
   </div>
   <div class="events-grid" style="margin-top:3.5rem">
     <div class="ev-card r">
-      <img class="ev-img" src="https://images.unsplash.com/photo-1542601906897-eab5ce0d76a1?w=900&q=85" alt="Royal Project Gastronomy Festival" loading="lazy" style="min-height:520px"/>
+      <img class="ev-img" src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=900&q=85" alt="Royal Project Gastronomy Festival" loading="lazy" style="min-height:520px"/>
       <div class="ev-body">
         <div class="ev-tag">Gastronomy · Seasonal</div>
         <h3 class="ev-name">Royal Project<br>Gastronomy Festival</h3>
@@ -845,7 +836,7 @@
     <div class="g-item r r-delay-2"><img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=600&q=85" alt="Risotto" loading="lazy"/></div>
     <div class="g-item r"><img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=600&q=85" alt="Dish" loading="lazy"/></div>
     <div class="g-item r r-delay-1"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=85" alt="Food spread" loading="lazy"/></div>
-    <div class="g-item r r-delay-2"><img src="https://images.unsplash.com/photo-1551183053-bf91798d047b?w=1200&q=85" alt="Main course" loading="lazy"/></div>
+    <div class="g-item r r-delay-2"><img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=1200&q=85" alt="Main course" loading="lazy"/></div>
     <div class="g-item r"><img src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=600&q=85" alt="Dessert" loading="lazy"/></div>
     <div class="g-item r r-delay-1"><img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=600&q=85" alt="Drinks" loading="lazy"/></div>
   </div>
@@ -987,6 +978,11 @@
 <a href="#locations" class="fab" id="fab">Find a Table →</a>
 
 <script>
+  /* ── Broken image fallback ─────────────── */
+  document.querySelectorAll('img').forEach(function(img) {
+    img.addEventListener('error', function() { this.style.opacity = '0'; });
+  });
+
   /* ── Sticky nav ────────────────────────── */
   const nav = document.getElementById('nav');
   const fab = document.getElementById('fab');
